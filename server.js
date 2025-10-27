@@ -26,7 +26,8 @@ app.get('/addStar', async (req, res) => {
         res.json(result.recordset);
     } catch (err) {
         console.error('SQL error', err);
-        res.status(500).send('Database connection failed',err);
+        res.json(err)
+        res.status(500).send('Database connection failed');
     }
 });
 
