@@ -23,10 +23,10 @@ app.get('/addStar', async (req, res) => {
         const result = await sql.query`SELECT * FROM Star`;
 
         // Send the result as JSON
-        res.json(result.recordset);
+        res.json(result.);
     } catch (err) {
         console.error('SQL error', err);
-        res.json(err)
+        res.json(err,"Fuck")
         res.status(500).send('Database connection failed');
     }
 });
