@@ -2,7 +2,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
-const port = process.env.PORT || 3306;
+const port = 3306;
 
 // IMPORTANT: Store these credentials securely, e.g., in environment variables!
 // Do not hardcode them in your source code in a real application.
