@@ -23,7 +23,7 @@ db.connect((err) => {
     console.log('Successfully connected to the MySQL database.');
 });
 // Create an API endpoint to get data
-app.get('/addStar', async (req, res) => {
+app.get('/', async (req, res) => {
     const sqlQuery = 'SELECT * FROM Star';
 
     // Execute the query
